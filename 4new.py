@@ -162,3 +162,35 @@ if __name__ == '__main__':
         name, real_category = dataset.get_raw_item(i)
         pred_category = predict(model, dataset, name)
         print(f'Name: {name:15s} | Real: {real_category:10s} | Pred: {pred_category}')
+
+# Number of samples: 20074
+# Number of categories: 18
+# Categories: ['Arabic', 'Chinese', 'Czech', 'Dutch', 'English', 'French', 'German', 'Greek', 'Irish', 'Italian', 'Japanese', 'Korean', 'Polish', 'Portuguese', 'Russian', 'Scottish', 'Spanish', 'Vietnamese']
+
+# First sample:
+# Name: Khoury
+# Country: Arabic
+# Input tensor shape: torch.Size([6, 1, 53])
+# Target tensor: tensor([0])
+# Epoch  1 | Loss: 36.9952 | Accuracy: 0.6525
+# Epoch  2 | Loss: 29.8141 | Accuracy: 0.7197
+# Epoch  3 | Loss: 27.4201 | Accuracy: 0.7416
+# Epoch  4 | Loss: 26.5682 | Accuracy: 0.7500
+# Epoch  5 | Loss: 25.4308 | Accuracy: 0.7577
+# Epoch  6 | Loss: 24.6492 | Accuracy: 0.7640
+# Epoch  7 | Loss: 24.0708 | Accuracy: 0.7680
+# Epoch  8 | Loss: 24.3479 | Accuracy: 0.7670
+# Epoch  9 | Loss: 24.8258 | Accuracy: 0.7655
+# Epoch 10 | Loss: 24.9316 | Accuracy: 0.7642
+
+# Prediction examples:
+# Name: Khoury          | Real: Arabic     | Pred: Arabic
+# Name: Nahas           | Real: Arabic     | Pred: Arabic
+# Name: Daher           | Real: Arabic     | Pred: Arabic
+# Name: Gerges          | Real: Arabic     | Pred: Arabic
+# Name: Nazari          | Real: Arabic     | Pred: Arabic
+# Name: Maalouf         | Real: Arabic     | Pred: Arabic
+# Name: Gerges          | Real: Arabic     | Pred: Arabic
+# Name: Naifeh          | Real: Arabic     | Pred: Arabic
+# Name: Guirguis        | Real: Arabic     | Pred: Arabic
+# Name: Baba            | Real: Arabic     | Pred: Arabic
